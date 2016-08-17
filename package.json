@@ -12,7 +12,7 @@
   },
   "scripts": {
     "prepublish": ". ./scripts/prepublish.sh",
-    "preinstall": "npm i && . ./scripts/prepublish.sh",
+    "preinstall": "cd ./node_modules/mantra-core; npm i; . ./scripts/prepublish.sh",
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "testonly": "mocha $npm_package_options_mocha",
